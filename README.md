@@ -38,4 +38,14 @@ productFib(714) # should return {21, 34, 1},
 productFib(800) # should return {34, 55, 0},        
 -----
 productFib(714) # should return {21, 34, true},
-productFib(800) # should return {34, 55, false}, 
+productFib(800) # should return {34, 55, false},
+
+INPUT  |   OUTPUT
+=================
+
+1. 0 -> [0,1,false]
+2. 6 -> [2,3, true]
+3. 16 -> [3,5,false]
+4. 104 -> [8,13, true]
+5. 714 -> return [21, 34, true]
+6. (800) -> returns (34, 55, false)
