@@ -46,7 +46,7 @@ INPUT  |   OUTPUT
 1. (done) 0 -> [0,1,false]
 2. (done) 1 -> [0,1,true]
 2. (done) 6 -> [2,3, true]
-3. 16 -> [3,5,false]
+3. (done) 16 -> [3,5,false]
 4. 104 -> [8,13, true]
 5. 714 -> return [21, 34, true]
 6. (800) -> returns (34, 55, false)
