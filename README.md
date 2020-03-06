@@ -1,5 +1,7 @@
 # Product of consecutive fibonacci numbers:
 
+[![Build Status](https://travis-ci.com/KOlofinmoyin/product_of_consecutive_fib_numbers.svg?branch=master)](https://travis-ci.com/KOlofinmoyin/product_of_consecutive_fib_numbers)
+
 The Fibonacci numbers are the numbers in the following integer sequence (Fn):
 
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...
