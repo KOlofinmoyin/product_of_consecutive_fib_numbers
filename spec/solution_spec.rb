@@ -8,4 +8,8 @@ describe Solution do
   it "takes 0 and returns [0, 1, false]" do
     expect(Solution.resolve(0)).to eq [0,1,false]
   end
+
+  it "takes 6 and returns [2,3,true]" do
+    expect(Solution.resolve(6)).to eq [2,3,true]
+  end
 end

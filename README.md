@@ -43,8 +43,8 @@ productFib(800) # should return {34, 55, false},
 INPUT  |   OUTPUT
 =================
 
-1. 0 -> [0,1,false]
-2. 1 -> [0,1,true]
+1. (done) 0 -> [0,1,false]
+2. (done) 1 -> [0,1,true]
 2. 6 -> [2,3, true]
 3. 16 -> [3,5,false]
 4. 104 -> [8,13, true]
