@@ -12,4 +12,8 @@ describe Solution do
   it "takes 6 and returns [2,3,true]" do
     expect(Solution.resolve(6)).to eq [2,3,true]
   end
+
+  it "takes 16 and returns [3,5,false]" do
+    expect(Solution.resolve(16)).to eq [3,5,false]
+  end
 end
