@@ -32,8 +32,10 @@ class Solution
     }
 
     # see private methods:
-    self.evaluate_highest_adjacent_false_result closest_nums, last_nums
+    self.evaluate_highest_adjacent_false_result closest_nums, last_nums, number
   end
+
+  private
 
   # helper function for 'less correct' and 'more correct' checks
   def self.new_pair_is proximity, closest, last, number
@@ -52,11 +54,16 @@ class Solution
   # "If you don't find two consecutive F(m) verifying F(m) * F(m+1) = prodyou will return"
   # "[F(m), F(m+1), false] or {F(n), F(n+1), 0} or (F(n), F(n+1), False)"
   # "F(m) being the smallest one such as F(m) * F(m+1) > prod.":
-  
-  def self.evaluate_highest_adjacent_false_result closest_nums, last_nums
+  def self.evaluate_highest_adjacent_false_result closest_nums, last_nums, number
     closest_product = closest_nums.inject(&:*)
     last_product = last_nums.inject(&:*)
 
+    # sometimes, both products are bigger, in which case return the closest of the two:
+    fallback = [closest_product, last_product].min == last_product ? 
+     last_nums.push(false) : closest_nums.push(false)
+    return fallback if [closest_product, last_product, number].min == number
+
+    # else they want the product greater than the given number:
     closest_product < last_product ? last_nums.push(false) : closest_nums.push(false)
   end
 end

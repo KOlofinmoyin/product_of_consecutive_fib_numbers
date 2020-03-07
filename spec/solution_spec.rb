@@ -32,4 +32,8 @@ describe Solution do
   it "takes 12816 and returns [89, 144, true]" do
     expect(Solution.resolve(12816)).to eq [89, 144, true]
   end
+
+  it "takes 12816 and returns [610, 987, true]" do
+    expect(Solution.resolve(602070)).to eq [610, 987, true]
+  end
 end
