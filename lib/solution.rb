@@ -1,5 +1,7 @@
 class Solution
   def self.resolve(number)
+    return [0,1,number == 1] if number < 2
+
     closest_nums = [0, 1];
     fib_nums = [0, 1, 2, 3, 5, 8, 13]
     fib_nums[0..5].each_with_index { |num, index|
